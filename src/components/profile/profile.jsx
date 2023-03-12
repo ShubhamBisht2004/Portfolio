@@ -1,15 +1,23 @@
 import React from 'react'
 import './profile.css'
 import IMG1 from '../../Assets/i1.jpeg'
-import IMG2 from '../../Assets/i2.PNG'
+// import IMG2 from '../../Assets/i2.PNG'
 
 
 const data = [
   {
     id: '1',
-    title: 'video1',
+    title: 'GIG',
     link:<iframe width="315" height="178" src="https://www.youtube.com/embed/4SWlMpIaeB0?controls=0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>,
     ytlink:'https://www.youtube.com/watch?v=4SWlMpIaeB0&t=3s'
+  },
+  {
+    id: '2',
+    title: 'Projects',
+    link:<iframe width="315" height="178" src="https://www.youtube.com/embed/videoseries?list=PLqOIDk1P7WJnZLCjjCedu4S5Or-9sJ7wA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>,
+    ytlink:'https://www.youtube.com/embed/videoseries?list=PLqOIDk1P7WJnZLCjjCedu4S5Or-9sJ7wA'
+
+    // <iframe width="560" height="315" src="" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
   }
 
 ]
@@ -19,7 +27,7 @@ const datayt = [
   
   {
     id: '1',
-    title: 'video1',
+    title: 'Demo',
     image: IMG1,
     link:'https://drive.google.com/drive/folders/1Sxm_PRHWOmJyTI7okYy8CMCKGm353lHv?usp=share_link'
   }
@@ -57,7 +65,7 @@ const profile = () => {
               <article key={id} className='portfolio__item'>
                 <div className='portfolio__item-image'>
                   
-                 <img src={image} />  
+                <img src={image} />  
                 </div>
                 <h3>{title}</h3>
 
